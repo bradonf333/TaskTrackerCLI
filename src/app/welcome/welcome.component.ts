@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WelcomeComponent implements OnInit {
 
+  title = 'Welcome to the Task Scheduler';
+
   constructor() { }
 
   ngOnInit() {

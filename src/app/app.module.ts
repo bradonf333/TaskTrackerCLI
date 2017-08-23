@@ -6,6 +6,7 @@ import { AlertModule } from 'ngx-bootstrap';
 
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { TasksModule } from './tasks/tasks.module';
 
 @NgModule({
   declarations: [
@@ -16,10 +17,12 @@ import { WelcomeComponent } from './welcome/welcome.component';
     BrowserModule,
     HttpModule,
     RouterModule.forRoot([
-      { path: '', redirectTo: 'tasks', pathMatch: 'full' },
-      { path: '**', redirectTo: 'tasks', pathMatch: 'full' }
+      { path: 'welcome', component: WelcomeComponent},
+      { path: '', redirectTo: 'welcome', pathMatch: 'full' },
+      { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
     ]),
-    AlertModule.forRoot()
+    AlertModule.forRoot(),
+    TasksModule
   ],
   providers: [],
   bootstrap: [AppComponent]
