@@ -21,4 +21,4 @@ import { TaskService } from './task.service';
   declarations: [TasksComponent],
   providers: [TaskService]
 })
-export class TasksModule { }
+export class TaskModule { }

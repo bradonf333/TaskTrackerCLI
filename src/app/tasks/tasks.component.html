@@ -6,18 +6,18 @@
   <div class='panel-body'>
 
     <div class='row'>
-            <div class='col-md-2 filter'>
-                Filter By Language:
-            </div>
-            <div class='col-md-4'>
-                <input type='text' [(ngModel)]='listFilter' />
-            </div>
-        </div>
-        <div class='row'>
-            <div class='col-md-6'>
-                <p><br>
-            </div>
-        </div>
+      <div class='col-md-2 filter'>
+        Filter By Language:
+      </div>
+      <div class='col-md-4'>
+        <input type='text' [(ngModel)]='listFilter' />
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-md-6'>
+        <p><br>
+      </div>
+    </div>
 
     <div class='table-responsive'>
       <table class='table' *ngIf='tasks && tasks.length'>
@@ -31,8 +31,7 @@
           </tr>
         </thead>
         <tbody>
-          <!--<tr *ngFor='let task of tasks | taskFilter:listFilter' >-->
-              <tr *ngFor='let task of tasks' >
+          <tr *ngFor='let task of filteredTasks'>
             <td>
               <img [src]='task.imageUrl' [title]='task.language' [style.width.px]='imageWidth' [style.margin.px]='imageMargin'>
             </td>
@@ -48,7 +47,7 @@
   </div>
 
   <div class='panel-footer'>
-      <a class='btn btn-primary' [routerLink]="['/create']">Create New Task</a>
-    </div>
+    <a class='btn btn-primary' [routerLink]="['/create']">Create New Task</a>
+  </div>
 
 </div>

@@ -13,9 +13,18 @@ export class TasksComponent implements OnInit {
   imageWidth = 35;
   imageMargin = 2;
   imageUrl: string;
-  listFilter: string;
   errorMessage: string;
   tasks: ITask[];
+  filteredTasks: ITask[];
+
+  _listFilter: string;
+  get listFilter(): string {
+      return this._listFilter;
+  }
+  set listFilter(value: string) {
+      this._listFilter = value;
+      this.filteredTasks = this.listFilter ? this.performFilter(this.listFilter) : this.tasks;
+  }
 
   constructor(private _taskService: TaskService) { }
 
@@ -25,6 +34,7 @@ export class TasksComponent implements OnInit {
     this._taskService.getTasks()
       .subscribe(tasks => {
         this.tasks = tasks;
+        this.filteredTasks = this.tasks;
         this.tasks.forEach(element => {
           this.setImageUrl(element);
         });
@@ -33,9 +43,20 @@ export class TasksComponent implements OnInit {
   }
 
   /**
-     * Sets the imageUrl of the given task based on the programming language
-     * @param task
-     */
+   * Search tasks array by the string passed in.
+   * Compares the value passed in with the task language.
+   * @param filterBy
+   */
+    performFilter(filterBy: string): ITask[] {
+      filterBy = filterBy.toLocaleLowerCase();
+      return this.tasks.filter((task: ITask) =>
+      task.language.toLocaleLowerCase().indexOf(filterBy) !== -1);
+  }
+
+  /**
+   * Sets the imageUrl of the given task based on the programming language
+   * @param task
+   */
   setImageUrl(task: ITask): void {
 
     switch (task.language) {

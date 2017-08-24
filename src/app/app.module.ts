@@ -6,7 +6,7 @@ import { AlertModule } from 'ngx-bootstrap';
 
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { TasksModule } from './tasks/tasks.module';
+import { TaskModule } from './tasks/task.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,7 @@ import { TasksModule } from './tasks/tasks.module';
       { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
     ]),
     AlertModule.forRoot(),
-    TasksModule
+    TaskModule
   ],
   providers: [],
   bootstrap: [AppComponent]
