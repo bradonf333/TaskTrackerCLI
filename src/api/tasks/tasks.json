@@ -1,0 +1,58 @@
+[
+    {
+    "taskId": 0,
+    "language": "C#",
+    "hours": 2,
+    "taskDescription": "Completed the Tribonacci sequence from CodeWars",
+    "date": "August 4, 2017 10:00 AM",
+    "imageUrl": ""
+  },
+  {
+    "taskId": 1,
+    "language": "Angular 2",
+    "hours": 2,
+    "taskDescription": "Started creating this task scheduler",
+    "date": "August 6, 2017 8:50 PM",
+    "imageUrl": ""
+  },
+  {
+    "taskId": 2,
+    "language": "Angular 2",
+    "hours": 2,
+    "taskDescription": "Created another task in this current app.",
+    "date": "August 6, 2017 8:50 PM",
+    "imageUrl": ""
+  },
+  {
+    "taskId": 3,
+    "language": "Angular 2",
+    "hours": 2.5,
+    "taskDescription": "Got the main stuff working for the tasks",
+    "date": "August 7, 2017 8:41 PM",
+    "imageUrl": ""
+  },
+  {
+    "taskId": 4,
+    "language": "Angular 2",
+    "hours": 2.5,
+    "taskDescription": "Finished module 13 in PluralSight Angular 2 course. Also worked on my task scheduler app.",
+    "date": "August 8, 2017 10:00 PM",
+    "imageUrl": ""
+  },
+  {
+    "taskId": 5,
+    "language": "Angular 2",
+    "hours": 3,
+    "taskDescription": "Completed half of module 14 in PluralSight Angular 2 course. Also worked on my task scheduler app.",
+    "date": "August 9, 2017 9:00 PM",
+    "imageUrl": ""
+  },
+  {
+    "taskId": 6,
+    "language": "Angular 2",
+    "hours": 1.5,
+    "taskDescription": "Worked on task scheduler app. Created a service to get programming languages from json file.",
+    "date": "August 10, 2017 9:45 PM",
+    "imageUrl": ""
+  }
+]
