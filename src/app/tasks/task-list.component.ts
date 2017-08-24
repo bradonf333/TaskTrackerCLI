@@ -4,10 +4,10 @@ import { TaskService } from './task.service';
 
 @Component({
   selector: 'app-tasks',
-  templateUrl: './tasks.component.html',
-  styleUrls: ['./tasks.component.css']
+  templateUrl: './task-list.component.html',
+  styleUrls: ['./task-list.component.css']
 })
-export class TasksComponent implements OnInit {
+export class TaskListComponent implements OnInit {
 
   pageTitle = 'Programming Task List';
   imageWidth = 35;

@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
-import { TasksComponent } from './tasks.component';
+import { TaskListComponent } from './task-list.component';
 import { TaskService } from './task.service';
 
 
@@ -14,11 +14,11 @@ import { TaskService } from './task.service';
     , FormsModule
     , HttpClientModule
     , RouterModule.forChild([
-      { path: 'tasks', component: TasksComponent }
+      { path: 'tasks', component: TaskListComponent }
       // { path: 'create', component: TaskCreateComponent }
   ])
   ],
-  declarations: [TasksComponent],
+  declarations: [TaskListComponent],
   providers: [TaskService]
 })
 export class TaskModule { }
