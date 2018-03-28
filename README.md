@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ### Main Index Page
 
 Reads a JSON file to display the tasks.
-![alt text](https://github.com/bradonf333/TaskTrackerCLI/blob/master/TaskTrackerDemo.gif) "Main Index")
+![alt text](https://github.com/bradonf333/TaskTrackerCLI/blob/master/TaskTrackerDemo.gif "Main Index")
 
 ## Development server
 
