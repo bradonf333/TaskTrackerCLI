@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.1.
 
+## Demos
+### Main Index Page
+
+Reads a JSON file to display the tasks.
+![alt text](https://github.com/bradonf333/ProgrammingLog_ASP.NETCore/blob/master/TaskTrackerDemo.gif"Main Index")
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
